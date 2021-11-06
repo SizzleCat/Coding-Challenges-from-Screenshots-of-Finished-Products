@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"> -->
+  <link rel="stylesheet" href="style.css">
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card card1">
+      <div class="top-card report-card">
+        <img class="profile" src="images/image-jeremy.png" alt="">
+        <div class="text">
+          <p><span class="pale_span">Report for</span></p>
+          <h1>Jeremy Robson</h1>
+        </div>
+      </div>
+      <div class="categories">
+        <a href="#" class="button">Daily</a>
+        <a href="#"  class="button">Weekly</a> 
+        <a href="#" class="button">Monthly</a>
+      </div>
+    </div>
+    
+    
+    <div class="card work">
+      <img class="icon" src="images/icon-work.svg" alt="">
+      <div class="top-card">
+        <header>
+          <h3>Work</h3>
+          <img src="images/icon-ellipsis.svg" alt="ellipsis">
+        </header>
+        <div class="stats">
+          <h4><span class="current-work">32</span>hrs</h4>
+          <p><span class="pale_span">Last week - <span class="previous-work">36</span>hrs</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card play">
+      <img class="icon" src="images/icon-play.svg" alt="">
+      <div class="top-card">
+        <header>
+          <h3>Play</h3>
+          <img src="images/icon-ellipsis.svg" alt="ellipsis">
+        </header>
+        <div class="stats">
+          <h4><span class="current-play">10</span>hrs</h4>
+          <p><span class="pale_span">Last week - <span class="previous-play">8</span>hrs</span></p> 
+        </div>
+      </div>
+    </div>
+
+    <div class="card study">
+      <img class="icon" src="images/icon-study.svg" alt="">
+      <div class="top-card">
+        <header>
+          <h3>Study</h3>
+          <img src="images/icon-ellipsis.svg" alt="ellipsis">
+        </header>
+        <div class="stats">
+          <h4><span class="current-study">4</span>hrs</h4>
+          <p><span class="pale_span">Last week - <span class="previous-study">7</span>hrs</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card exercise">
+      <img class="icon" src="images/icon-exercise.svg" alt="">
+      <div class="top-card">
+        <header>
+          <h3>Exercise</h3>
+          <img src="images/icon-ellipsis.svg" alt="ellipsis">
+        </header>
+        <div class="stats">
+          <h4><span class="current-exercise">4</span>hrs</h4>
+          <p><span class="pale_span">Last week - <span class="previous-exercise">5</span>hrs</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card social">
+      <img class="icon" src="images/icon-social.svg" alt="">
+      <div class="top-card">
+        <header>
+          <h3>Social</h3>
+          <img src="images/icon-ellipsis.svg" alt="ellipsis">
+        </header>
+        <div class="stats">
+          <h4><span class="current-social">5</span>hrs</h4>
+          <p><span class="pale_span">Last week - <span class="previous-social">10</span>hrs</span></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card self-care">
+      <img class="icon" src="images/icon-self-care.svg" alt="">
+      <div class="top-card">
+        <header>
+          <h3>Self Care</h3>
+          <img src="images/icon-ellipsis.svg" alt="ellipsis">
+        </header>
+        <div class="stats">
+          <h4><span class="current-self-care">2</span>hrs</h4>
+          <p><span class="pale_span">Last week - <span class="previous-self-care">2</span>hrs</span></p>
+        </div>
+      </div>
+    </div>
+    
+    
+    <!-- <div class="card work">
+      <img class="icon" src="images/icon-work.svg" alt="">
+      <div class="top-card">
+        <header>
+          <h3>Work</h3>
+          <img src="images/icon-ellipsis.svg" alt="ellipsis">
+        </header>
+        <div class="stats">
+          <h4>32hrs</h4>
+          <p><span class="pale_span">Last week - 36hrs</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card play">
+      <img class="icon" src="images/icon-play.svg" alt="">
+      <div class="top-card">
+        <header>
+          <h3>Play</h3>
+          <img src="images/icon-ellipsis.svg" alt="ellipsis">
+        </header>
+        <div class="stats">
+          <h4>10hrs</h4>
+          <p><span class="pale_span">Last week - 8hrs</span></p> 
+        </div>
+      </div>
+    </div>
+
+    <div class="card study">
+      <img class="icon" src="images/icon-study.svg" alt="">
+      <div class="top-card">
+        <header>
+          <h3>Study</h3>
+          <img src="images/icon-ellipsis.svg" alt="ellipsis">
+        </header>
+        <div class="stats">
+          <h4>4hrs</h4>
+          <p><span class="pale_span">Last week - 7hrs</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card exercise">
+      <img class="icon" src="images/icon-exercise.svg" alt="">
+      <div class="top-card">
+        <header>
+          <h3>Exercise</h3>
+          <img src="images/icon-ellipsis.svg" alt="ellipsis">
+        </header>
+        <div class="stats">
+          <h4>4hrs</h4>
+          <p><span class="pale_span">Last week - 5hrs</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card social">
+      <img class="icon" src="images/icon-social.svg" alt="">
+      <div class="top-card">
+        <header>
+          <h3>Social</h3>
+          <img src="images/icon-ellipsis.svg" alt="ellipsis">
+        </header>
+        <div class="stats">
+          <h4>5hrs</h4>
+          <p><span class="pale_span">Last week - 10hrs</span></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card self-care">
+      <img class="icon" src="images/icon-self-care.svg" alt="">
+      <div class="top-card">
+        <header>
+          <h3>Self Care</h3>
+          <img src="images/icon-ellipsis.svg" alt="ellipsis">
+        </header>
+        <div class="stats">
+          <h4>2hrs</h4>
+          <p><span class="pale_span">Last week - 2hrs</span></p>
+        </div>
+      </div>
+    </div> -->
+  </div>
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by Shannon Maraghy.
+  </div> -->
+  <script src="app.js"></script>
+</body>
+</html>

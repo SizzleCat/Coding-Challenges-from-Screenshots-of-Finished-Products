@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="container">
+    <div class="side left-side">
+      <form onsubmit="return false">
+        <label for="bill">Bill</label>
+        <input type="text" name="bill" id="bill" placeholder="0" autocomplete="off">
+      </form>
+      <div class="tip-percent">
+        <h2>Select Tip %</h2>
+        <div class="buttons">
+          <button class="btn tip-btn">5%</button>
+          <button class="btn tip-btn">10%</button>
+          <button class="btn tip-btn">15%</button>
+          <button class="btn tip-btn">20%</button>
+          <button class="btn tip-btn">25%</button>
+          <button class="btn custom">
+            <input type="text" id="custom" placeholder="Custom">
+          </button>
+        </div>
+      </div>
+      <form id="number-people-form" onsubmit="return false">
+        <label for="number-of-people">Number of People</label>
+        <input type="text" name="number-of-people" id="number-of-people" placeholder="0" autocomplete="off">
+        <div id="error">Can't be zero</div>
+      </form>
+    </div>
+    <div class="side right-side">
+      <div class="display-cont">
+        <div class="cont tip-amount-container">
+          <div class="tip-amount">
+            <h2>Tip Amount</h2>
+            <p>/ person</p>
+          </div>
+          <div class="output tip-amount-field">$<span id="tip-per-person">0.00</span></div>
+        </div>
+        <div class="cont total-container">
+          <div class="total">
+            <h2>Total</h2>
+            <p>/ person</p>
+          </div>
+          <div class="output total-field">$<span id="total-per-person">0.00</span></div>
+        </div>
+      </div>
+        
+      <button class="btn" id="reset" disabled>Reset</button>
+    </div>
+  </div>
+</div>
+    
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Shannon Maraghy</a>.
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

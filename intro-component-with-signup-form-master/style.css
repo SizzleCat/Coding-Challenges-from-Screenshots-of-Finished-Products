@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+}
+
+h1 {
+line-height: 1.3;
+margin-bottom: .75rem;
+font-size: 48px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: 500;
+}
+
+.container {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  max-width: 1050px;
+  height: 95vh;
+  margin: 1rem auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+form {
+  background: white;
+  width: 450px;
+  padding: 2rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header,
+input,
+button {
+  width: 100%;
+  display: inline-block;
+  border-radius: 3px;
+  border: none;
+  padding: 1rem 2rem;
+}
+
+input {
+  padding-left: .75rem;
+  border: 1px solid hsl(246, 25%, 77%);
+  font-weight: 700;
+}
+
+::placeholder {
+  font-weight: 700;
+}
+
+header, 
+button, 
+form {
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+header {
+  background: hsl(248, 32%, 49%);
+  text-align: center;
+  border-radius: 5px;
+}
+
+strong {
+  font-weight: 700;
+}
+
+span {
+  font-weight: 400;
+}
+
+button {
+  background: hsl(154, 59%, 51%);
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;;
+}
+
+small {
+  color: hsl(246, 25%, 77%);
+  font-size: 10px;
+  text-align: center;
+}
+
+#terms {
+  color: hsl(0, 100%, 74%);
+  font-weight: 700;
+}
+
+.attribution {
+  background: white;
+}
+
+.error {
+  color: hsl(0, 100%, 74%);
+  font-weight: 600;
+  font-size: 10px;
+  text-align: right;
+  position: relative;
+  bottom: 3px;
+}
+
+@media (min-width: 1101px) {
+  body {
+    background: hsl(0, 100%, 74%) url(images/bg-intro-desktop.png);
+  }
+}
+
+@media (max-width: 1100px) {
+  
+  body {
+    overflow: scroll;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    background: hsl(0, 100%, 74%) url(images/bg-intro-mobile.png);
+    width: 320px;
+    text-align: center;
+    height: auto;
+    margin: 2rem auto 0 auto;
+    padding-bottom: 3rem;
+  }
+
+
+  h1 {
+    font-size: 28px;
+    margin: 6rem 0 2rem 0;
+  }
+
+  p {
+    margin: 0 1rem;
+    font-size: 14px;
+  }
+
+  header, 
+  form {
+    width: 86%;
+    margin: .5rem auto;
+    padding: 1rem;
+    height: auto;
+  }
+
+  header {
+    margin-top: 3rem;
+  }
+
+  input, 
+  button {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .error {
+    bottom: 15px;
+  }
+}
