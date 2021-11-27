@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 400;
+  background: url(images/illustration-woman-online-desktop.svg) -15% 40% no-repeat, white url(images/bg-pattern-desktop.svg) -15% 50% no-repeat;
+  background-size: 50%, 50%;
+  border-radius: 10px;
+  padding: 3rem;
+  width: 750px;
+  display: flex;
+  justify-content: flex-end;
+  overflow: visible;
+  margin: .5rem;
+  position: relative;
+  box-shadow: 10px 30px 20px rgba(0, 0, 0, 0.2);
+}
+
+#box {
+  position: absolute;
+  left: -12.5%;
+  top: 36.5%;
+}
+
+#mobile-image {
+  display: none;
+}
+
+.text-container {
+  width: 50%;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+.question-wrapper {
+  border-bottom: 2px dotted hsl(240, 5%, 91%);
+  padding-bottom: 1rem;
+}
+
+.question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.question-text:hover {
+  cursor: pointer;
+  color: #d8880b;
+}
+
+.down:hover {
+  cursor: pointer;
+}
+
+.answer {
+  display: none;
+}
+
+.clicked {
+  display: block;
+}
+
+.flip-arrow {
+  transform: rotate(180deg);
+}
+
+p.bolded {
+font-weight: 700;
+}
+
+@media(max-width: 850px) {
+
+  .card {
+    background-image: url(images/bg-pattern-mobile.svg);
+    background-size: 65%;
+    background-position: 54% 0%;
+    width: 300px;
+    border-radius: 20px;
+    padding: 1rem 1rem 2rem 1rem;
+    display: block;
+    margin-top: 5rem;
+    }
+
+  #box {
+    display: none;
+  }
+
+  .text-container {
+    width: 100%;
+    padding: 4rem 0 0 0;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .question-wrapper {
+    padding: .85rem;
+  }
+
+  .question {
+    padding: .5rem 0;
+  }
+
+  .answer {
+    padding-bottom: .5rem;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  #mobile-image {
+    display: block;
+    width: 200px;
+    position: absolute;
+    top: -93px;
+    left: 55px;
+  }
+  
+}

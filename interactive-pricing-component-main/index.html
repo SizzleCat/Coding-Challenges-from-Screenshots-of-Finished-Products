@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="main">
+      <header>
+        <h1> Simple, traffic-based pricing</h1>
+        <h2>Sign-up for our 30-day trial. No credit card required.</h2>
+      </header>
+      <div class="card">
+        <div class="changing-values">
+          <h3><span id="views">100K PAGEVIEWS</span></h3>
+          <h3 id="rate"><span id="price">$16.00</span><span>/ month</span></h3>
+        </div>
+        <input type="range" min="1" max="100" value="50" id="slider">
+        <div class="toggle-container">
+          <p>Monthly Billing</p>
+          <div class="toggle-housing">
+            <div class="toggle-button"></div>
+          </div>
+          <p id="billing">Yearly Billing <span id="discount" class="discount">25% discount</span><span id="discount-mobile" class="discount">-25%</span></p>
+        </div>
+        <footer>
+          <div class="features">
+            <div class="feature-wrapper">
+              <img src="images/icon-check.svg" alt="checkmark" class="check">
+              <p class="feature">Unlimited websites</p>
+            </div>
+            <div class="feature-wrapper">
+              <img src="images/icon-check.svg" alt="checkmark" class="check">
+              <p class="feature">100% data ownership</p>
+            </div>
+            <div class="feature-wrapper">
+              <img src="images/icon-check.svg" alt="checkmark" class="check">
+              <p class="feature">Email reports</p>
+            </div>
+          </div>
+          <button>Start my trial</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+  <!-- Simple, traffic-based pricing
+  Sign-up for our 30-day trial. No credit card required. 
+
+  Pageviews
+  $ /month
+
+  Monthly Billing
+  Yearly Billing 25% discount
+
+  Unlimited websites
+  100% data ownership
+  Email reports
+
+  Start my trial -->
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by Shannon Maraghy.
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
