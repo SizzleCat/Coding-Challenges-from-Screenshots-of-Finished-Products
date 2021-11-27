@@ -15,6 +15,13 @@ form.addEventListener('submit', function(event) {
     }
   }
 
+// \w  ->  a-z A-Z _ 0-9
+// \w+ any combination of 1 or more of above 
+// [-+.']  means any of those characters once
+// [-+.']\w+  means any of those characters followed by a word character or more
+// *  zero or more
+// abc-def-gef'azxf   is okay with \w+([-+.']\w+)*
+
   if (email.value) {
     const regexEmail = /\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/;
     if (!regexEmail.test(email.value)) {
